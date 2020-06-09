@@ -1,0 +1,27 @@
+.deco {
+    position: relative;
+    text-align: center;
+    color: yellowgreen;
+}
+
+.texte_centrer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.deco .texte_centrer a{
+    text-decoration: none;
+    color: sandybrown;
+}
+.deco .texte_centrer a h1{
+    transition-property: font-size;
+    transition-duration: 1.5s;
+}
+.deco .texte_centrer a:hover h1{
+    font-size: 3em;
+}
+.deco_icon .text:hover h4{
+    color: #1b1e21;
+}
+

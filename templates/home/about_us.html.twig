@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<section class="container text-center mt-10" style="font-size:1.5em" >
+    <div class="row">
+       <div class="mt-5" >
+           <h1 class="text-center">ABOUT US!</h1>
+            <span style="color: darkmagenta">SeraphGlasses</span>  est l'une des boutiques en ligne de la societe G.A.F,entreprise de dediée à la vente de
+            lunettes de vue et de soleil en magazins ou en ligne.
+            Installée jusqu'a present dans plus de cinqs pays .Crée en 2012 ,GAF est une societe qui a vue ses debuts au
+            Cameroun principalement à la capitale avec le tout premier magasin de vente.
+       </div>
+        <div class="mt-5">
+                Aujourd'hui en plein essort,nous proposons non plus seulement des ventes en magasin mais egalement du ecommerce pour faciliter la tâche à
+                nos differents clients.Muni d'un systeme de recommandation,nos sites vous offfrirons la meilleure experience jamais vecue.
+        </div>
+
+    </div>
+</section>
+<section class="container text-center mt-10" style="font-size:1.5em">
+    <h1 class="mt-5">CONTACT US!</h1>
+    <div>
+        <h5>Nous sommes disponibles suivant chaque pays sur:</h5>
+
+        <p>Cameroun:6 237 x x x x</p>
+        <p>Tunisie: +216 x x x x</p>
+        <p>France:+33 . x x x x</p>
+        <p>Maroc: +212 x x x x</p>
+        <p> Cote Ivoire: +225 x x x x</p>
+    </div>
+</section>
+<section class="container mt-5" style="font-size:1.5em">
+    {% if app.user %}
+    <a href="#" class="btn btn-primary">Suivez notre newsLetter!</a>
+    {% else %}
+    <a href="{{ path('security_login') }}" class="btn btn-primary">Inscrivez vous pour recevoir notre newsLetter!</a>
+    {% endif %}
+</section>
+{% endblock %}

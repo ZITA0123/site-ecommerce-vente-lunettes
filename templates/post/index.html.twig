@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block body%}
+    <div class="card bg-light">
+        <div class="card-body float-left">
+            <a class="card-img-top"">
+                <img   style="width: 95%" src="{{ asset(produit.photo) }}" alt="">
+            </a>
+            <p class="card-title"><h5>{{ produit.designation }}
+                {% if produit.productsDiscount %}
+                    <div class="text text-warning">Promo!</div>
+                {% endif %}
+            </h5> </p>
+            <div style="font-weight: bold;font-size: 2rem;" class="text-secondary">{{ produit.prix }}dt
+            </div>
+            <div>
+                {% for c in produit.categorie %}
+                    <em class="text-muted text-primary text-italic">#{{ c.nom }}</em>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block body%}
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="clo-md-6" style="margin-right: 100px">
+                <img src="{{ asset(produit.photo) }}" alt=""> {#style="width: 100%" #}
+            </div>
+
+            <div class="col-md-6" style="float: right">
+                <div>
+                    <h1 style="float: left;">{{ produit.designation }} </h1>
+                    {% if produit.productsDiscount %}<h5 class="text-warning">Promo</h5>{% endif %}
+                </div>
+                <div style="clear: both;">
+                    {% if produit.productsDiscount %}
+                        <div class="text text-warning">
+                            {% set x= produit.prix  %}
+                            {% set y= (produit.productsDiscount.getDiscountValue()* x) / 100  %}
+                            {% set prix= (x-y) %}
+
+                            <div style="font-weight: bold;font-size: 2rem;" class="text-primary"> {{ prix  }} €</div>
+                            <div style="text-decoration:line-through; font-weight: bold;font-size: 2rem;" class="text-secondary"> {{ produit.prix }}€ </div>
+                        </div>
+                    {% else %}
+                        <div style="font-weight: bold;font-size: 2rem;" class="text-primary"> {{ produit.prix }}€</div>
+                    {% endif %}
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mt-5">
+                        <a href="#" class="btn btn-success">Try our recommandation system</a>
+                    </div>
+                    <div class="col-md-6 mt-5">
+                        <a href="{{ path('panier_add',{'id': produit.id}) }}" class="btn btn-success">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <h2>DESCRIPTION</h2>
+        <div>
+            <h4>Couleur: {{ produit.couleur }}</h4>
+            <h4>Forme: {{ produit.forme }}</h4>
+            <h4>Marque: {{ produit.marque }}</h4>
+            <h4>Type: {{ produit.type }}</h4>
+        </div>
+    </div>
+{% endblock %}

@@ -3,10 +3,118 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous"/>
+            <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+            <style>
+                .filter{
+                    display: block;
+                    position: sticky;
+                    top: 20px;
+                }
+                .user_mail .user{
+                    display: none;
+                }
+                .user_mail h5:hover a{
+                    display: block;
+                }
+            </style>
+        {% endblock %}
     </head>
     <body>
+    <header class="sticky-top">
+        <section class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <marquee id="id1">
+                        <span onmouseover="getElementById('id1').stop();" onmouseout="getElementById('id1').start();">
+                            <h3>SeraphGlasses</h3>
+                        </span>
+                    </marquee>
+                </div>
+                <div class="col-md-8">
+                    <nav>
+                        <ul class="nav-list">
+                            <div class="row">
+                                <div class="col-md-2"><li class="list"><a href="{{ path('app_home') }}">Home</a></li></div>
+                                <div class="col-md-2"><li class="list"><a href="{{ path('eyeGlasse') }}">EyeGlasse</a></li></div>
+                                <div class="col-md-2"><li class="list"><a href="{{ path('sunGlasse') }}">SunGlasse</a></li></div>
+                                <div class="col-md-2"><li class="list"><a href="{{ path('promotion') }}">Promotions</a></li></div>
+                                <div class="col-md-2"><li class="list"><a href="{{ path('about_us') }}">Contacts</a></li></div>
+                            </div>
+
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-2">
+                    <div class="row">
+                        {% if not app.user %}
+                        <div class="col-md-10 account">
+                          <a href="{{ path('security_login') }}">Connexion</a>
+                        </div>
+                        {% else %}
+                        <div class="col-md-10 account user_mail">
+                            <h5>{{ app.user.email }}
+                                <a class="user" href="{{ path('security_logout') }}"> Deconnexion</a>
+                            </h5>
+
+
+                        </div>
+                        {% endif %}
+                        <div class="col-md-2 panier"> <a href="{{ path('panier') }}">CART</a></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </header>
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
+    <footer>
+        <section class="container mt-5">
+            <div class="row">
+                <div class="clo-md-4">Contact us
+                    <nav>
+                        <ul class="nav-list"  >
+                            <li class="list"><a href="#">SeraphGlasses-Store</a></li>
+                            <li class="list"><a href="#">00216 50 02 76 12</a></li>
+                            <li class="list"><a href="#"> fontsingzita@gmail.com</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+                <div class="col-md-4">Our Societe
+                    <nav>
+                        <ul class="nav-list">
+                            <li class="list"><a href="#">delivery</a></li>
+                            <li class="list"><a href="#">About Us</a></li>
+                            <li class="list"><a href="#">Term & Condition</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+                <div class="col-md-4">
+                    <h5>Join Our NewsLetter</h5>
+                    <input class="mail" type="email" name="mail" id="mail" placeholder="fontsingzit@gmail.com">
+                </div>
+            </div>
+
+        </section>
+    </footer>
+    {#SCRIPT#}
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous">
+    </script>
+    <script src="{{ asset('js/main.js') }}"></script>
+    <script src="{{ asset('bootstrap-input-spinner-master/src/bootstrap-input-spinner.js') }}"></script>
+    <script>
+        $("input[type=number]").InputSpinner({buttonsWidth:"2px"
+        })
+    </script>
     </body>
 </html>

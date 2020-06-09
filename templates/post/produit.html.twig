@@ -1,0 +1,33 @@
+
+    <div class="card bg-light">
+        <div class="card-body float-left">
+            <a class="card-img-top" href="{{ path('showProduct',{id: produit.id, slug:produit.slug}) }}">
+                <img  style="width: 95%" src="{{ asset(produit.photo) }}" alt="">
+            </a>
+            <p class="card-title">
+                <h4>{{ produit.designation }}</h4>
+            </p>
+            <div>
+                {% if produit.productsDiscount %}
+                    <h5 class="text-warning">Promo</h5>
+                    <div class="text text-warning">
+                        {% set x= produit.prix  %}
+                        {% set y= (produit.productsDiscount.getDiscountValue()* x) / 100  %}
+                        {% set prix= (x-y) %}
+
+                        <div style="font-weight: bold;font-size: 2rem;" class="text-primary"> {{ prix  }}€</div>
+                        <div style="text-decoration:line-through; font-weight: bold;font-size: 2rem;" class="text-secondary"> {{ produit.prix }} €</div>
+                    </div>
+                {% else %}
+                    <div style="font-weight: bold;font-size: 2em;" class="text-primary"> {{ produit.prix }} € </div>
+                {% endif %}
+                <a href="{{ path('panier_add',{'id': produit.id}) }}" class="btn btn-primary">Add to cart</a>
+            </div>
+            <div>
+                {% for c in produit.categorie %}
+                <em class="text-muted text-primary text-italic">#{{ c.nom }}</em>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+

@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+{% block body%}
+
+<section class="container">
+    <div class="row">
+        <div class="grid">
+            <div class="row">
+                {% for produit in produit %}
+                    <div class="col-md-4 mt-5">
+                        {% include 'post/produit.html.twig' with {produit: produit} only %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

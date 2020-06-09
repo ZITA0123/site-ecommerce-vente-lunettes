@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Session Panier!{% endblock %}
+
+{% block body %}
+    <div class="bg-light p-3 text-center">
+        <h1>Your cart</h1>
+    </div>
+    <div>
+        {% if cart | length > 0 %}
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Produit</th>
+                    <th>Prix</th>
+                    <th>Quantite</th>
+                    <th>Total</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for cart in cart  %}
+                    <tr>
+                        <td>{{ cart.produit.designation }}</td>
+                        <td>{{ cart.produit.prix }} €</td>
+                        <td style="width:200px" ><input  value="{{ cart.quantite }}" > </td>
+                        <td>{{  cart.produit.prix * cart.quantite}}</td>
+                        <td>
+                            <a href="{{ path('panier_delete',{'id': cart.produit.id}) }}" class="btn btn-danger btn-sm">
+                                <i class="fas fa-trash"></i>
+                            </a>
+
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="3" class="text-right"> <h5>Total :</h5> </td>
+                    <td>{{ total }} € </td>
+                    <td></td>
+                </tr>
+                </tfoot>
+            </table>
+            <div class="text-right">
+                {% if app.user %}
+                    <a href="#" class="btn btn-primary">Passer la commande</a>
+                {% else %}
+                    {#<h5 class="text-info">Veillez vous connecter avant d'effectuer votre commande!</h5>#}
+                    <a href="{{ path('security_login') }}" class="btn btn-primary">Passer la commande</a>
+                {% endif %}
+            </div>
+        {% else %}
+            <h3>Your cart is empty!</h3>
+        {% endif %}
+    </div>
+{% endblock %}

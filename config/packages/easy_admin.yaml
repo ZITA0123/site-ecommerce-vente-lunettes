@@ -1,0 +1,32 @@
+easy_admin:
+    entities:
+        # List the entity class name you want to manage
+        Categorie:
+            class: App\Entity\Categorie
+            form:
+                fields:
+                    - {property: 'nom'}
+                    - {property: 'description'}
+        product:
+            class: App\Entity\Product
+            form:
+                fields:
+                    - {property: 'designation'}
+                    - {property: 'quantite'}
+                    - {property: 'prix'}
+                    - {property: 'photo'}
+                    - {property: 'categorie'}
+                    - {property: 'couleur'}
+                    - {property: 'forme'}
+                    - {property: 'marque'}
+                    - {property: 'type'}
+        productDiscount:
+            class: App\Entity\ProductDiscount
+        User:
+            class: App\Entity\User
+    list:
+        actions:
+            - {name: 'edit',icon: 'pencil',label: false, css_class: 'btn btn-secondary' }
+            - {name: 'delete',icon: 'trash',label: false, css_class: 'btn btn-danger' }
+
+#        - App\Entity\User

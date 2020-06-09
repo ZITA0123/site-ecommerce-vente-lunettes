@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block body%}
+<section class="container js-filter">
+    <div class="row">
+        <div class="col-md-3 js-filter-form">
+            {% include 'post/filter.html.twig' with {form: form} only %}
+        </div>
+        <div class="col-md-9">
+            <div class="grid js-filter-content">
+                <div class="row">
+                    {% for produit in produits %}
+                    <div class="col-md-4 mt-5">
+                        {% include 'post/produit.html.twig' with {produit: produit} only %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div style="margin-top: 4rem;" class="js-filter-pagination">
+                {{ knp_pagination_render(produits) }}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

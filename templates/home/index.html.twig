@@ -1,0 +1,82 @@
+{% extends 'base.html.twig' %}
+
+{% block body%}
+    <section >
+        <img class="banner" src="{{ asset('image/banner.png') }}" alt="banner">
+    </section>
+    <section class="container">
+        <marquee id="id1"><span onmouseover="getElementById('id1').stop();" onmouseout="getElementById('id1').start();">
+                <img src="{{ asset('image/baaaaaaa2.jpg') }}" alt="banner">
+                <img src="{{ asset('image/laaa3.jpg') }}" alt="banner">
+                <img style="height:300px;" src="{{ asset('image/homme/llll.png') }}" alt="banner">
+                <img src="{{ asset('image/laaaaaa2.jpg') }}" alt="banner">
+                <img src="{{ asset('image/baaaa1.jpg') }}" alt="banner">
+            </span>
+        </marquee>
+    </section>
+    <section class="container">
+        <h1 class="mt-5" style="text-align: center" >Featured Products</h1>
+        <div class="row flex">
+            {% for produit in produits %}
+                <div class="col-md-4 mt-5">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <a class="card-img-top" href="{{ path('showProduct',{id: produit.id, slug:produit.slug}) }}">
+                                <img  style="width: 95%" src="{{ asset(produit.photo) }}" alt="">
+                            </a>
+                            <div class="card-title">
+                                <h5 style="float: left">{{ produit.designation }}</h5>
+                            </div>
+                            <div style="clear: both;">
+                                {% if produit.productsDiscount %}
+                                    <h5 class="text-warning">Promo</h5>
+                                    <div class="text text-warning">
+                                        {% set x= produit.prix  %}
+                                        {% set y= (produit.productsDiscount.getDiscountValue()* x) / 100  %}
+                                        {% set prix= (x-y) %}
+
+                                        <div style="font-weight: bold;font-size: 2rem;" class="text-primary"> {{ prix  }} €</div>
+                                        <div style="text-decoration:line-through; font-weight: bold;font-size: 2rem;" class="text-secondary"> {{ produit.prix }}€</div>
+                                    </div>
+                                {% else %}
+                                    <div style="font-weight: bold;font-size: 2rem;" class="text-primary"> {{ produit.prix }} €</div>
+                                {% endif %}
+                            </div>
+                            <a href="{{ path('panier_add',{'id': produit.id}) }}" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+            {% endfor %}
+        </div>
+    </section>
+
+    <section class="container mt-5 deco">
+        <div class="row">
+            <div class="col-md-6 mt-5">
+               <img src="{{ asset('image/000.jpg') }}" alt="" style="width:98%; height:80%">
+                <div class="texte_centrer"><a href="{{ path('eyeGlasse') }}"><h1>Lunettes de soleil</h1></a></div>
+            </div>
+            <div class="col-md-6 mt-5">
+               <img src="{{ asset('image/zi4.png') }}" alt="" style="height: 80%;width:98% ">
+                <div class="texte_centrer"><a href="{{ path('eyeGlasse') }}"><h1>Lunettes de vue</h1></a></div>
+            </div>
+        </div>
+            <div class="row deco_icon">
+                <div class="col-md-4 ">
+                    <i class="fas fa-hand-holding-usd fa-7x"></i>
+                    <div class="text"><h4>Prix Adorable</h4></div>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-balance-scale fa-7x"></i>
+                    <div class="text"><h4>Service de qualite</h4></div>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-user-lock fa-7x"></i>
+                    <div class="text"><h4>Paiement Securise</h4></div>
+                </div>
+            </div>
+    </section>
+{% endblock %}
+
+
