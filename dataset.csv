@@ -1,0 +1,308 @@
+shape,skin,hair,eye,sex,veiled,outcome
+diamond,dark,black,brown,1,0,1
+diamond,very dark,black,brown,1,0,1
+heart,medium ,light brown,green,0,0,2
+oblong,fair,blond,brown,1,0,3
+oval,very fair,light brown,brown,1,1,4
+round,medium,gray,blue,0,0,5
+square,pale,black,hazel,0,0,6
+heart,dark,black,black,0,0,2
+square,very fair,dark brown,brown,0,0,6
+triangle,fair,blond,green,0,0,7
+square,medium,gray,brown,1,0,6
+oval,fair,light brown,blue,1,1,4
+square,medium,dark brown,green,1,1,6
+oval,pale,white,red albino,1,0,4
+oblong,fair,gray,brown,1,1,3
+diamond,very dark,black,brown,1,0,1
+triangle,dark,brown,green,1,0,7
+round,medium,dark brown,brown,1,1,5
+round,medium,black,hazel,1,1,5
+heart,fair,gray,blue,1,1,2
+oblong,very fair,brown,green,1,0,3
+square,dark,dark brown,black,1,1,6
+triangle,medium dark,dark brown,black,1,1,7
+square,medium,white,hazel,1,1,6
+round,fair,white,red albino,1,0,5
+square,medium,white,red albino,0,0,6
+oblong,medium dark,dark brown,amber,0,0,3
+diamond,medium dark,medium brown,brown,0,0,1
+heart,very dark,black,hazel,0,0,2
+oblong,very dark,black,hazel,1,0,3
+heart,dark,brown,hazel,1,0,2
+triangle,fair,blond,green,1,0,7
+round,very fair,medium blond,brown,1,0,5
+square,medium,red,black,1,1,6
+round,dark,black,black,1,0,5
+square,medium,dark brown,violet,0,0,6
+oblong,fair,light brown,violet,0,0,3
+diamond,dark,black,violet,0,0,1
+triangle,very dark,brown,brown,0,0,7
+heart,fair,gray,black,0,0,2
+heart,very fair,blond,brown,1,0,2
+square,medium,medium blond,brown,1,0,6
+triangle,medium dark,light brown,hazel,1,0,7
+heart,medium,gray,violet,0,0,2
+oblong,dark,black,brown,1,1,3
+diamond,fair,light brown,green,1,0,1
+oblong,very fair,blond,blue,1,1,3
+diamond,dark,dark brown,black,0,0,1
+heart,medium,dark brown,brown,1,0,2
+square,dark,black,green,0,0,6
+triangle,fair,brown,hazel,1,0,7
+diamond,very dark,black,black,0,0,1
+round,dark,light brown,brown,1,1,5
+oblong,fair,blond,black,0,0,3
+oval,very fair,dark blond,brown,0,0,4
+heart,fair,light blond,brown,1,1,2
+oblong,medium,blond,violet,1,0,3
+square,medium,brown,hazel,1,0,6
+triangle,dark,brown,amber,0,0,7
+round,dark,dark brown,amber,0,0,5
+oval,medium,light brown,amber,0,0,4
+round,dark,black,blue,0,0,5
+diamond,fair,gray,brown,0,0,1
+triangle,fair,gray,hazel,1,0,7
+square,fair,red,green,1,1,6
+oblong,medium,red,blue,0,0,3
+square,very dark,black,brown,0,0,6
+oblong,dark,dark brown,amber,1,0,3
+oval,medium dark,brown,hazel,0,0,4
+square,dark,light brown,hazel,1,1,6
+diamond,fair,brown,amber,0,0,1
+triangle,fair,white,blue,1,0,7
+oblong,fair,gray,green,1,1,3
+heart,medium,red,amber,0,0,2
+triangle,very fair,blond,green,0,0,7
+square,fair,light blond,violet,0,0,6
+oblong,fair,light brown,amber,0,0,3
+square,dark,light brown,hazel,1,1,6
+oval,very dark,brown,brown,0,0,4
+oblong,very dark,black,black,1,1,3
+heart,dark,light brown,violet,0,0,2
+oval,medium dark,black,green,0,0,4
+square,dark,gray,black,1,1,6
+oblong,medium,gray,green,0,0,3
+diamond,meduim,red,blue,0,0,1
+heart,fair,blond,brown,1,1,2
+square,dark,light blond,brown,0,0,6
+heart,fair,dark blond,brown,1,0,2
+oblong,fair,brown,green,0,0,3
+oval,very fair,dark blond,brown,0,0,4
+diamond,very dark,dark brown,brown,1,0,1
+triangle,dark,black,black,1,0,7
+triangle,medium,light blond,brown,1,1,7
+triangle,medium,red,brown,1,1,7
+square,very fair,gray,hazel,0,0,6
+oblong,medium,gray,brown,0,0,3
+triangle,medium,blond,brown,1,0,7
+diamond,dark,dark brown,hazel,0,0,1
+oval,dark,brown,blue,1,1,4
+diamond,very dark,black,black,1,1,1
+square,medium,black,blue,0,0,6
+triangle,medium dark,light brown,green,1,1,7
+square,fair,blond,hazel,0,0,6
+diamond,medium,light blond,amber,1,1,1
+oblong,dark,black,black,0,0,3
+oval,dark,dark brown,brown,0,0,4
+round,medium,blond,blue,1,1,5
+square,medium,blond,red albino,0,0,6
+round,fair,brown,green,1,1,5
+square,fair,dark brown,blue,0,0,6
+round,fair,light brown,violet,1,1,5
+diamond,very fair,red,hazel,0,0,1
+oblong,medium,gray,amber,0,0,3
+round,medium,gray,hazel,0,0,5
+diamond,very dark,black,brown,0,0,1
+oblong,dark,dark brown,brown,1,0,3
+oblong,medium,red,green,1,0,3
+oval,medium,auburn,blue,1,0,4
+square,medium dark,brown,black,0,0,6
+round,dark,dark brown,brown,1,0,5
+diamond,very dark,light brown,brown,1,0,1
+square,medium,white,black,1,1,6
+oval,very fair,black,violet,1,0,4
+diamond,fair,black,amber,0,0,1
+triangle,fair,red,hazel,0,0,7
+square,very fair,auburn,green,0,0,6
+oval,medium,dark blond,green,1,0,4
+oblong,dark,dark brown,brown,0,0,3
+diamond,dark,black,black,0,0,1
+triangle,fair,white,red albino,0,0,7
+triangle,fair,black,blue,1,0,7
+square,fair,white,green,1,1,6
+heart,medium,white,red albino,0,0,2
+heart,very fair,auburn,brown,0,0,2
+oblong,medium,blond,brown,1,1,3
+oval,medium,dark blond,blue,1,1,4
+square,dark,light blond,black,1,0,6
+heart,medium,white,green,0,0,2
+diamond,medium,blond,brown,0,0,1
+heart,fair,brown,black,1,0,2
+triangle,dark,brown,green,0,0,7
+heart,very dark,black,brown,1,0,2
+oblong,dark,dark brown,hazel,0,0,3
+diamond,medium dark,brown,hazel,1,1,1
+oval,dark,dark brown,amber,1,0,4
+oblong,very fair,brown,hazel,0,0,3
+square,very fair,dark brown,violet,0,0,6
+diamond,medium,brown,amber,1,1,1
+heart,fair,black,brown,1,0,2
+triangle,fair,light blond,violet,1,0,7
+diamond,medium,white,amber,0,0,1
+square,fair,auburn,green,0,0,6
+round,dark,black,brown,1,1,5
+oval,fair,red,blue,0,0,4
+heart,medium,black,green,1,0,2
+square,dark,black,brown,1,0,6
+oblong,medium,black,green,1,0,3
+triangle,medium,brown,blue,0,0,7
+oval,fair,gray,violet,1,0,4
+oblong,medium,white,amber,1,0,3
+diamond,very fair,gray,violet,0,0,1
+heart,medium,auburn,brown,1,0,2
+oblong,fair,black,black,0,0,3
+round,medium,brown,blue,0,0,5
+square,fair,dark brown,black,1,0,6
+heart,medium,blond,green,1,1,2
+heart,very fair,dark brown,green,1,0,2
+square,dark,dark brown,black,1,0,6
+heart,very dark,black,black,1,0,2
+diamond,medium dark,light brown,brown,1,0,1
+triangle,fair,white,red albino,1,1,7
+oblong,very dark,dark brown,brown,0,0,3
+oblong,medium dark,dark brown,blue,0,0,3
+triangle,medium dark,black,amber,1,0,7
+square,medium,red,hazel,1,1,6
+diamond,fair,brown,green,0,0,1
+heart,medium,light brown,blue,1,1,2
+triangle,medium dark,brown,violet,0,0,7
+heart,very fair,blond,green,1,0,2
+oblong,fair,brown,hazel,1,1,3
+round,fair,dark brown,violet,0,0,5
+round,dark,brown,violet,0,0,5
+round,dark,light brown,brown,1,1,5
+square,fair,red,brown,0,0,6
+oblong,dark,light brown,blue,1,0,3
+diamond,very dark,dark brown,brown,0,0,1
+triangle,dark,black,hazel,1,1,7
+square,dark,black,black,1,0,6
+triangle,fair,auburn,brown,0,0,7
+oblong,dark,gray,brown,1,0,3
+round,dark,dark brown,hazel,1,1,5
+heart,dark,black,brown,1,0,2
+oblong,dark,gray,black,1,1,3
+round,medium,auburn,blue,1,0,5
+round,medium,gray,green,1,1,5
+diamond,fair,auburn,black,1,1,1
+triangle,very dark,brown,brown,1,0,7
+oblong,medium,auburn,green,1,1,3
+triangle,medium,gray,violet,1,1,7
+heart,fair,black,hazel,1,1,2
+triangle,medium,black,blue,0,0,7
+triangle,medium,auburn,green,1,0,7
+diamond,fair,black,brown,0,0,1
+square,dark,brown,black,1,1,6
+oval,very dark,dark brown,brown,1,1,4
+square,fair,blond,green,0,0,6
+triangle,fair,gray,blue,0,0,7
+diamond,fair,blond,hazel,1,0,1
+triangle,dark,white,blue,1,0,7
+triangle,very fair,blond,hazel,0,0,7
+diamond,very fair,red,violet,1,1,1
+heart,very dark,dark brown,brown,0,0,2
+square,medium dark,dark brown,brown,0,0,6
+oval,very fair,dark brown,violet,1,0,4
+oblong,dark,gray,black,1,0,3
+oblong,medium ,blond,green,0,0,3
+round,medium dark,brown,violet,1,0,5
+oval,very fair,brown,hazel,0,0,4
+heart,very fair,red,hazel,0,0,2
+oval,fair,gray,amber,0,0,4
+round,medium,brown,hazel,1,1,5
+triangle,medium,white,blue,1,0,7
+heart,medium,golden blond,green,0,0,2
+oval,fair,white,amber,0,0,4
+oblong,very fair,dark brown,amber,0,0,3
+diamond,medium dark,brown,hazel,0,0,1
+heart,medium dark,light brown,brown,1,1,2
+square,medium dark,dark brown,black,1,0,6
+square,fair,auburn,brown,1,0,6
+square,fair,dark brown,hazel,1,0,6
+diamond,dark,black,black,0,0,1
+oval,medium,black,brown,0,0,4
+square,medium,blond,amber,0,0,6
+triangle,very dark,black,brown,0,0,7
+oval,dark,gray,black,0,0,4
+diamond,medium,black,hazel,0,0,1
+oblong,very dark,light brown,black,1,1,3
+square,very fair,auburn,brown,1,0,6
+diamond,medium,light blond,green,1,0,1
+heart,fair,blond,green,1,1,2
+round,medium,red,blue,0,0,5
+oblong,dark,dark brown,black,0,0,3
+round,medium,dark brown,hazel,0,0,5
+diamond,dark,gray,violet,0,0,1
+triangle,medium,auburn,blue,0,0,7
+round,medium,black,green,0,0,5
+oblong,dark,black,brown,1,0,3
+oblong,medium,gray,hazel,1,1,3
+round,very dark,black,brown,1,0,5
+heart,medium,auburn,black,1,1,2
+triangle,fair,auburn,amber,0,0,7
+triangle,medium,white,brown,1,0,7
+diamond,medium,gray,green,1,0,1
+square,medium,white,blue,1,0,6
+round,very dark,black,green,0,0,5
+diamond,medium,gray,blue,1,0,1
+oblong,fair,black,amber,0,0,3
+oval,dark,gray,black,0,0,4
+oval,fair,auburn,brown,0,0,4
+oval,medium,red,black,0,0,4
+diamond,very fair,auburn,blue,1,0,1
+oblong,medium,white,red albino,1,0,3
+square,very dark,auburn,brown,1,0,6
+round,fair,gray,amber,1,0,5
+diamond,dark,dark brown,hazel,0,0,1
+oblong,fair,dark brown,hazel,0,0,3
+square,medium,dark brown,amber,1,0,6
+round,medium,brown,violet,1,0,5
+round,very dark,dark brown,blue,1,1,5
+round,medium ,blond,green,0,0,5
+diamond,fair,golden blond,brown,1,0,1
+heart,very fair,brown,amber,0,0,2
+triangle,fair,red,hazel,1,0,7
+oblong,fair,black,black,0,0,3
+round,dark,light brown,blue,1,1,5
+square,very fair,red,black,0,0,6
+round,medium,light brown,red albino,0,0,5
+diamond,fair,black,amber,0,0,1
+oblong,dark,light brown,violet,1,0,3
+square,medium dark,brown,brown,0,0,6
+round,medium,dark brown,violet,0,0,5
+round,fair,blond,violet,0,0,5
+square,medium,brown,amber,0,0,6
+triangle,fair,dark brown,hazel,0,0,7
+triangle,medium,black,black,0,0,7
+diamond,dark,light brown,brown,0,0,1
+round,fair,golden blond,black,1,1,5
+round,dark,black,green,0,0,5
+triangle,medium,red,green,0,0,7
+oblong,very dark,auburn,blue,0,0,3
+oval,dark,black,violet,0,0,4
+oval,medium,gray,violet,0,0,4
+triangle,very fair,black,green,0,0,7
+oval,medium,white,brown,1,0,4
+oblong,fair,black,blue,0,0,3
+triangle,medium,auburn,black,0,0,7
+diamond,medium dark,dark brown,violet,1,0,1
+square,very dark,brown,black,1,1,6
+round,dark,black,amber,0,0,5
+triangle,medium,dark blond,hazel,0,0,7
+square,fair,brown,green,0,0,6
+round,fair,golden blond,green,0,0,5
+oblong,very fair,brown,amber,1,0,3
+oval,dark,black,hazel,0,0,4
+diamond,medium,white,blue,0,0,1
+round,medium,black,blue,1,0,5
+triangle,dark,light brown,black,1,1,7
