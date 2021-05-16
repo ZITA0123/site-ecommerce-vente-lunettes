@@ -1,3 +1,3 @@
 # github-upload
 
-Basic E-commerce Apllication for purchasing glasses 
+E-commerce Apllication for purchasing glasses 
